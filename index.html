@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    
+    <a-scene background="color: grey">
+        <a-entity position="0 5 0">
+            <a-camera></a-camera>
+        </a-entity>
+        <a-plane color="rgb(232, 3, 252)" rotation="-90 0 0" position = "0 0 -10" width="8" height="8"></a-plane>
+        <a-entity geometry="primitive: sphere; radius: 0.5; thetaLength: 180" position="-0.75 0 -10" material="color: #3498db;"></a-entity>
+        <a-entity geometry="primitive: cylinder; radius: 0.25; height:3;" position="-0.75 1 -10" material="color: orange;"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 0.5; thetaLength: 180;" position="0.75 0 -10" material="color: #3498db;"></a-entity>
+        <a-entity geometry="primitive: cylinder; radius: 0.25; height:3;" position="0.75 1 -10" material="color: orange;"></a-entity>
+        <a-entity geometry="primitive: box; height:3; width:3;" position="0 4 -10" material="color: blue;"></a-entity>
+        <a-entity geometry="primitive: box; height:1.5; width:2.25; " position="0 6.45 -10" material="color: blue;"></a-entity>
+        <a-entity geometry="primitive: box; height:0.15; width:2; depth:0.75;" position="0 5.55 -10" material="color: orange;"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 0.5; thetaLength: 180;" position="0 7 -10" material="color: #3498db;"></a-entity>
+        <a-entity geometry="primitive: cylinder; height:3; radius:0.05;" position="0 7 -10" material="color: grey;"></a-entity>
+        <a-entity geometry="primitive: sphere; radius: 0.25; thetaLength: 180;" position="0 8.75 -10" material="color: red;"></a-entity>
+        <a-entity geometry="primitive: cylinder; height:2; radius:0.25;" position="2 4.5 -10" rotation="0 0 55" material="color: grey;"></a-entity>
+        <a-entity geometry="primitive: cylinder; height:2; radius:0.25;" position="3.75 4.5 -10" rotation="0 0 -55" material="color: grey;"></a-entity>       
+        <a-entity geometry="primitive: sphere; radius: 0.25; thetaLength: 180;" position="2.905 3.9 -10" material="color: red;"></a-entity>
+        <a-dodecahedron position="4.905 5.35 -10" scale="0.5 0.5 0.5"></a-dodecahedron>
+        <a-entity geometry="primitive: cylinder; height:2; radius:0.25;" position="-2 4.5 -10" rotation="0 180 55" material="color: grey;"></a-entity>
+        <a-entity geometry="primitive: cylinder; height:2; radius:0.25;" position="-3.75 4.5 -10" rotation="0 180 -55" material="color: grey;"></a-entity>       
+        <a-entity geometry="primitive: sphere; radius: 0.25; thetaLength: 180;" position="-2.905 3.9 -10" material="color: red;"></a-entity>
+        <a-dodecahedron position="-4.905 5.35 -10" scale="0.5 0.5 0.5"></a-dodecahedron>
+        <a-entity geometry="primitive: sphere; radius:0.25;" position="0.5 6.5 -9.5" material="color:white;"></a-entity>
+
+        <a-entity geometry="primitive: sphere; radius:0.25;" position="-0.5 6.5 -9.5" material="color:white;"></a-entity>
+        <a-entity geometry="primitive: sphere; radius:0.075;" position="-0.5 6.5 -9.25" material="color:black;" animation="property:position; from:-0.5 6.4 -9.25; to:-0.5 6.55 -9.25; dir:alternate; loop:true; dur:1000;"></a-entity>
+        <a-entity geometry="primitive: sphere; radius:0.075;" position="0.5 6.5 -9.25" material="color:black;" animation="property:position; from:0.5 6.4 -9.25; to:0.5 6.55 -9.25; dir:alternate; loop:true; dur:1000;"></a-entity>
+    </a-scene>
+</body>
+</html>
